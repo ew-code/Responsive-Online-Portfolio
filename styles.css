@@ -45,7 +45,8 @@ h1 {
 
 p {
  margin: 0;
- font-weight: 600;
+ font-size: 30px;
+ font-weight: 300;
 }
 
 .hero-text {
@@ -54,8 +55,12 @@ p {
 
 .button {
     width: 200px;
-    height: 60px;
+    height: 55px;
     border-radius: 30px;
     background-color: coral;
     text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
 }
