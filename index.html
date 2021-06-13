@@ -9,26 +9,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="src/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
     </head>
 
     <body>
         <section class="hero">
             <nav>
                 <img class="logo" src="src/images/logo.png" alt="logo">
-                <ul>
-                    <li>About me</li>
-                    <li>Projects</li>
-                    <li>Contact me</li>
+                <ul id="nav-list">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
                     <h1>Ewelina Wesołowska</h1>
                     <p>Tester Oprogramowania</p>
-                    <div class="button">About me</div>
+                    <div class="button"><a href="#about-me">About me</a></div>
                 </div>
                 <div class="socials">
                     <div><a href="https://www.linkedin.com/in/ewelina-weso%C5%82owska/" class="social"><svg
@@ -53,20 +55,59 @@
                 </div>
             </div>
         </section>
-        <section class="sub-section">
+        <section class="sub-section" id="about-me">
             <div class="information">
                 <h2>About me</h2>
                 <p>Hello. My name is Ewelina. I'm a Software Tester with passion for building websites.</p>
             </div>
             <div class="headshot-container">
-                <img class="headshot" src="src/images/EW CV Picture.png"
+                <img class="headshot" src="src/images/EW CV Picture.png" alt="Ewelina Wesołowska headshot">
             </div>
         </section>
-        <section></section>
-        <footer></footer>
-
-
-        <script src="src/app.jss" async defer></script>
+        <section class="sub-section-alternative" id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class='project-card'>
+                    <img class="project-image"
+                        src="src/images/screencapture-file-C-Users-13090-Projekty-HTML-Samuraj-2-index-html-2021-06-13-15_34_04.png"
+                        alt="Project One Image">
+                    <h3>Project One</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making tis project.</p>
+                    <hr />
+                    <p class="subtext"><a class="project-link" href="https://github.com/ew-code">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image"
+                        src="src/images/screencapture-file-C-Users-13090-Projekty-Web-Development-Bootstrap-first-project-index-html-2021-06-13-15_24_57.png"
+                        alt="Project Two Image">
+                    <h3>Project Two</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making tis project.</p>
+                    <hr />
+                    <p class="subtext"><a class="project-link" href="https://github.com/ew-code">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image"
+                        src="src/images/screencapture-file-C-Users-13090-Projekty-Responsive-Portfolio-index-html-2021-06-13-09_32_04.png"
+                        alt="Project Three Image">
+                    <h3>Project Three</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making tis project.</p>
+                    <hr />
+                    <p class="subtext"><a class="project-link" href="https://github.com/ew-code">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="src/images/ew-code.png" alt="Project Four Image">
+                    <h3>Project Four</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making tis project.</p>
+                    <hr />
+                    <p class="subtext"><a class="project-link" href="https://github.com/ew-code">View here</a></p>
+                </div>
+            </div>
+        </section>
+        <footer id="contact-me">
+            <h2>Contact me</h2>
+            <p>ewelina.wesolowska2@link4.pl</p>
+        </footer>
+        <script src="src/app.js"></script>
     </body>
 
 </html>
